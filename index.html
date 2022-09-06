@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keith | About</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  
+     <nav>
+    <input id="nav-toggle" type="checkbox">
+    <div class="logo">KEITH<strong>CODE</strong></div>
+    <ul class="links">
+      <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+      <li><a href="#work">WORK</a></li>
+       <li><a href="#projects">PROJECTS</a></li>
+      <li><a href="#contact">CONTACTS</a></li>
+    </ul>
+    <label for="nav-toggle" class="icon-burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+  </nav>
+  
+    <section>
+      <div class="content">
+  <div class="content__container">
+    <p class="content__container__text">
+      Hello i am
+    </p>
+    
+    <ul class="content__container__list">
+      <li class="content__container__list__item">Keith</li>
+      <li class="content__container__list__item">Gamer</li>
+      <li class="content__container__list__item">Student</li>
+    </ul>
+  </div>
+</div>
+     <center><img class="Img1" src="Img1//face1.png" alt="Img1"><center><h1 class="job">Front-end developer</h1></center></center>
+    </section>
+    <section>
+      <div class="container reveal">
+        <h2 class="h2-newcolor1">My Occupation</h2>
+         <p class="line1">──────────────</p>      
+        <div class="cards">
+          <div class="text-card">
+            <h3>Student</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="text-card">
+            <h3>Future Web Designer</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="text-card">
+            <h3>Future I.T</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container reveal">
+        <h2 class="h2-newcolor2">Who i am</h2>
+        <p class="jobs">Future Web Designer & Student</p>
+        <img class="myface1" src="Img1//myface1.png">
+        <div class="cards">
+          <div class="text-card">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="text-card">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="text-card">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container reveal">
+        <h2 class="h2-bug">My Future Work</h2>
+        <center><p class="line2">──────────────</p></center>     
+        <div class="cards">
+          <div class="text-card-bug">
+            <img class="img1" src="Img1//component1.png" alt="Img1">
+            <p class="p10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="text-card-bug">
+            <img class="img2" src="Img1//component2.png" alt="Img2">
+            <p class="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="text-card-bug">
+            <img class="img3" src="Img1//component3.png" alt="Img3">
+            <p class="p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+    <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.reveal');
+
+      for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }
+        else{
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+    </script>
+  </body>
+</html>
